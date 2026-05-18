@@ -1,3 +1,5 @@
+// src/data/portfolio.ts
+
 export const personalInfo = {
   name: "Ferhan",
   fullName: "Muhammad Ferhan Pratama Sodikin",
@@ -12,7 +14,7 @@ export const personalInfo = {
   instagram: "https://www.instagram.com/ehann.31",
   whatsapp: "https://wa.me/6282123887404",
   cvUrl: "/cv-ehan.pdf",
-  avatar: "/images/avatar.svg",
+  avatar: "https://ui-avatars.com/api/?name=Ferhan&background=0D8ABC&color=fff&size=200",
 };
 
 export const skills = [
@@ -33,7 +35,7 @@ export const projects = [
     title: "Virtual Tour School 360°",
     description:
       "Aplikasi virtual tour berbasis web menggunakan teknologi 360° panorama untuk menjelajahi lingkungan sekolah secara interaktif. Dilengkapi dengan hotspot navigasi dan informasi detail setiap area.",
-    image: "/images/project-virtual-tour.svg",
+    image: "https://placehold.co/600x400/0D8ABC/ffffff?text=Virtual+Tour+360",
     tags: ["JavaScript", "Three.js", "HTML/CSS", "PHP", "Laravel"],
     liveUrl: "https://demo.example.com/virtual-tour",
     githubUrl: "https://github.com/ehann14/vitour11",
@@ -44,7 +46,7 @@ export const projects = [
     title: "Top Up Website",
     description:
       "Platform top up game online dengan sistem pembayaran terintegrasi, dashboard admin lengkap, dan UI yang modern. Mendukung berbagai metode pembayaran dan real-time order tracking.",
-    image: "/images/project-topup.svg",
+    image: "https://placehold.co/600x400/7C3AED/ffffff?text=Top+Up+Website",
     tags: ["Laravel", "MySQL", "Tailwind CSS", "JavaScript"],
     liveUrl: "https://demo.example.com/topup",
     githubUrl: "https://github.com/ehan/topup-website",
@@ -55,7 +57,7 @@ export const projects = [
     title: "Laravel CRUD App",
     description:
       "Aplikasi manajemen data full-featured dengan Laravel, dilengkapi autentikasi, role management, export Excel/PDF, dan dashboard analitik yang komprehensif.",
-    image: "/images/project-laravel.svg",
+    image: "https://placehold.co/600x400/FF2D55/ffffff?text=Laravel+CRUD",
     tags: ["Laravel", "MySQL", "Bootstrap", "jQuery"],
     liveUrl: "https://demo.example.com/laravel-crud",
     githubUrl: "https://github.com/ehan/laravel-crud",
@@ -66,7 +68,7 @@ export const projects = [
     title: "Python Calculator",
     description:
       "Kalkulator ilmiah berbasis Python dengan GUI modern menggunakan Tkinter, mendukung operasi matematika kompleks, history kalkulasi, dan konversi satuan.",
-    image: "/images/project-python.svg",
+    image: "https://placehold.co/600x400/34C759/ffffff?text=Python+Calculator",
     tags: ["Python", "Tkinter", "Math", "GUI"],
     liveUrl: "https://demo.example.com/python-calc",
     githubUrl: "https://github.com/ehan/python-calculator",
@@ -85,42 +87,42 @@ export const certificates = [
   },
   {
     id: 2,
-    title: "Laravel Framework Expert",
-    issuer: "Udemy",
-    date: "2024",
-    image: "/images/cert-2.svg",
+    title: "AI Ready ASEAN Certification",
+    issuer: "Amazon & Prestasi Junior Indonesia",
+    date: "2025",
+    image: "/images/AI Ready ASEAN_page-0001.jpg",
     url: "#",
   },
   {
     id: 3,
-    title: "JavaScript Advanced Concepts",
-    issuer: "freeCodeCamp",
-    date: "2023",
-    image: "/images/cert-3.svg",
+    title: "AI Ready ASEAN - Advanced Level",
+    issuer: "Amazon & Prestasi Junior Indonesia",
+    date: "2025",
+    image: "/images/AI Ready ASEAN_page-0002.jpg",
     url: "#",
   },
   {
     id: 4,
-    title: "Python Programming",
-    issuer: "Coursera",
-    date: "2023",
-    image: "/images/cert-4.svg",
+    title: "Laravel Framework Expert",
+    issuer: "Udemy",
+    date: "2024",
+    image: "https://placehold.co/600x400/FF9500/ffffff?text=Laravel+Expert",
     url: "#",
   },
   {
     id: 5,
-    title: "UI/UX Design Essentials",
-    issuer: "Google",
-    date: "2024",
-    image: "/images/cert-5.svg",
+    title: "JavaScript Advanced Concepts",
+    issuer: "freeCodeCamp",
+    date: "2023",
+    image: "https://placehold.co/600x400/007AFF/ffffff?text=JavaScript+Advanced",
     url: "#",
   },
   {
     id: 6,
-    title: "Database Management",
-    issuer: "Oracle Academy",
+    title: "Python Programming",
+    issuer: "Coursera",
     date: "2023",
-    image: "/images/cert-6.svg",
+    image: "https://placehold.co/600x400/34C759/ffffff?text=Python+Programming",
     url: "#",
   },
 ];
@@ -166,4 +168,4 @@ export const experiences = [
       "Mempelajari rekayasa perangkat lunak, pemrograman web, database, dan jaringan komputer. Aktif dalam berbagai kompetisi LKS (Lomba Kompetensi Siswa) bidang web technology.",
     tags: ["RPL", "Web Technology", "LKS"],
   },
-]; 
+];

@@ -117,7 +117,7 @@ export function CertificatesSection() {
               animate={{ scale: 1, opacity: 1, y: 0 }}
               exit={{ scale: 0.9, opacity: 0, y: 20 }}
               transition={{ type: "spring", stiffness: 300, damping: 25 }}
-              className="relative max-w-lg w-full rounded-3xl overflow-hidden shadow-2xl"
+              className="relative max-w-2xl w-full rounded-3xl overflow-hidden shadow-2xl"
               style={{
                 backgroundColor: "var(--card)",
                 border: "1px solid var(--border)",
@@ -136,7 +136,7 @@ export function CertificatesSection() {
                 {/* Close */}
                 <button
                   onClick={() => setSelected(null)}
-                  className="absolute top-4 right-4 w-9 h-9 rounded-xl flex items-center justify-center transition-colors"
+                  className="absolute top-4 right-4 w-9 h-9 rounded-xl flex items-center justify-center transition-colors z-10"
                   style={{
                     backgroundColor: "var(--surface)",
                     color: "var(--text-secondary)",
@@ -145,46 +145,16 @@ export function CertificatesSection() {
                   <HiX className="w-4 h-4" />
                 </button>
 
-                {/* Certificate visual */}
-                <div
-                  className="w-full h-48 rounded-2xl mb-6 flex items-center justify-center relative overflow-hidden"
-                  style={{
-                    background:
-                      "linear-gradient(135deg, rgba(59,130,246,0.1), rgba(6,182,212,0.1))",
-                    border: "1px solid rgba(59,130,246,0.2)",
-                  }}
-                >
-                  {/* Certificate design */}
-                  <div className="text-center">
-                    <div
-                      className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4"
-                      style={{
-                        background: "linear-gradient(135deg, #3B82F6, #06B6D4)",
-                      }}
-                    >
-                      <HiAcademicCap className="w-8 h-8 text-white" />
-                    </div>
-                    <p
-                      className="text-sm font-semibold"
-                      style={{ color: "#60A5FA", fontFamily: "var(--font-mono)" }}
-                    >
-                      Certificate of Completion
-                    </p>
-                    <p
-                      className="text-xs mt-1"
-                      style={{ color: "var(--text-muted)" }}
-                    >
-                      {selected.issuer}
-                    </p>
-                  </div>
-                  {/* Decorative elements */}
-                  <div
-                    className="absolute top-3 left-3 w-8 h-8 rounded-full opacity-20"
-                    style={{ background: "linear-gradient(135deg, #3B82F6, #06B6D4)" }}
-                  />
-                  <div
-                    className="absolute bottom-3 right-3 w-6 h-6 rounded-full opacity-20"
-                    style={{ background: "linear-gradient(135deg, #6366F1, #EC4899)" }}
+                {/* Certificate Image - FIXED! */}
+                <div className="mb-6 rounded-2xl overflow-hidden shadow-lg">
+                  <img
+                    src={selected.image}
+                    alt={selected.title}
+                    className="w-full h-auto object-contain"
+                    onError={(e) => {
+                      // Fallback jika gambar error
+                      e.currentTarget.src = "https://placehold.co/800x600/1e293b/60A5FA?text=Certificate+Not+Found";
+                    }}
                   />
                 </div>
 
