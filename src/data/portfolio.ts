@@ -54,13 +54,13 @@ export const projects = [
   },
   {
     id: 3,
-    title: "Laravel CRUD App",
+    title: "Website Store akun Game sederhana",
     description:
       "Aplikasi manajemen data full-featured dengan Laravel, dilengkapi autentikasi, role management, export Excel/PDF, dan dashboard analitik yang komprehensif.",
-    image: "https://placehold.co/600x400/FF2D55/ffffff?text=Laravel+CRUD",
-    tags: ["Laravel", "MySQL", "Bootstrap", "jQuery"],
-    liveUrl: "https://demo.example.com/laravel-crud",
-    githubUrl: "https://github.com/ehan/laravel-crud",
+    image: "/images/ehanstore.png",
+    tags: ["HTML", "CSS", "JavaScript"],
+    liveUrl: "https://ehanzz-store.vercel.app/",
+    githubUrl: "https://github.com/ehann14/EhanzzStore.git",
     featured: false,
   },
   {
