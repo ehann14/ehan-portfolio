@@ -3,7 +3,7 @@ import "./globals.css";
 import { Providers } from "@/components/Providers";
 
 export const metadata: Metadata = {
-  title: "Ehan Portfolio | Web Developer & UI Designer",
+  title: "Ehann",
   description:
     "Portfolio Ehan — Full Stack Web Developer specializing in Next.js, Laravel, and modern UI. Building elegant, performant, and user-friendly web experiences.",
   keywords: [
@@ -16,11 +16,11 @@ export const metadata: Metadata = {
     "UI Designer",
     "Bandung",
   ],
-  authors: [{ name: "Ehan" }],
-  creator: "Ehan",
+  authors: [{ name: "Muhamad Ferhan" }],
+  creator: "Muhamad Ferhan",
   openGraph: {
     type: "website",
-    title: "Ehan Portfolio",
+    title: "Muhammad Ferhan Pratama Sodikin - Portfolio",
     description: "Full Stack Web Developer & UI Designer",
     siteName: "Ehan Portfolio",
   },
