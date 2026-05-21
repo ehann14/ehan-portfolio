@@ -35,9 +35,9 @@ export const projects = [
     title: "Virtual Tour School 360°",
     description:
       "Aplikasi virtual tour berbasis web menggunakan teknologi 360° panorama untuk menjelajahi lingkungan sekolah secara interaktif. Dilengkapi dengan hotspot navigasi dan informasi detail setiap area.",
-    image: "https://placehold.co/600x400/0D8ABC/ffffff?text=Virtual+Tour+360",
+    image: "/images/vitour11.png",
     tags: ["JavaScript", "Three.js", "HTML/CSS", "PHP", "Laravel"],
-    liveUrl: "https://demo.example.com/virtual-tour",
+    liveUrl: "http://127.0.0.1:8000",
     githubUrl: "https://github.com/ehann14/vitour11",
     featured: true,
   },
