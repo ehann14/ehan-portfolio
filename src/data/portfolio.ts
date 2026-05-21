@@ -36,7 +36,7 @@ export const projects = [
     description:
       "Aplikasi virtual tour berbasis web menggunakan teknologi 360° panorama untuk menjelajahi lingkungan sekolah secara interaktif. Dilengkapi dengan hotspot navigasi dan informasi detail setiap area.",
     image: "/images/vitour11.png",
-    tags: ["JavaScript", "Three.js", "HTML/CSS", "PHP", "Laravel"],
+    tags: ["JavaScript", "Tailwind CSS", "HTML/CSS", "PHP", "Laravel"],
     liveUrl: "http://127.0.0.1:8000",
     githubUrl: "https://github.com/ehann14/vitour11",
     featured: true,
@@ -65,13 +65,13 @@ export const projects = [
   },
   {
     id: 4,
-    title: "Python Calculator",
+    title: "Landing Page Hosting",
     description:
       "Kalkulator ilmiah berbasis Python dengan GUI modern menggunakan Tkinter, mendukung operasi matematika kompleks, history kalkulasi, dan konversi satuan.",
-    image: "https://placehold.co/600x400/34C759/ffffff?text=Python+Calculator",
+    image: "/images/hosting.png",
     tags: ["Python", "Tkinter", "Math", "GUI"],
-    liveUrl: "https://demo.example.com/python-calc",
-    githubUrl: "https://github.com/ehan/python-calculator",
+    liveUrl: "https://ehanzhosting.vercel.app",
+    githubUrl: "https://github.com/ehann14/ehanzhosting.git",
     featured: false,
   },
 ];
