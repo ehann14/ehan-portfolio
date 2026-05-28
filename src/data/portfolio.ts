@@ -7,7 +7,7 @@ export const personalInfo = {
   tagline: "Crafting digital experiences with clean code and elegant design",
   description:
     "Saya adalah seorang web developer yang passionate dalam membangun aplikasi web modern yang elegant, performant, dan user-friendly. Dengan pengalaman dalam berbagai teknologi frontend dan backend, saya selalu berusaha menghadirkan solusi terbaik untuk setiap project.",
-  email: "ferhan2009@gmail.com",
+  email: "ferhan142009@gmail.com",
   phone: "+62 821-2388-7404",
   location: "Bandung, Indonesia",
   github: "https://github.com/ehann14",
@@ -97,41 +97,21 @@ export const certificates = [
 
 export const experiences = [
   {
-    id: 1,
-    type: "work",
-    title: "Web Developer Intern (PKL)",
-    company: "PT. Digital Kreasi Indonesia",
-    period: "Jan 2024 – Mar 2024",
-    description:
-      "Mengembangkan fitur frontend menggunakan Next.js dan Tailwind CSS. Berkolaborasi dengan tim backend dalam integrasi REST API. Berkontribusi dalam perbaikan bug dan optimasi performa aplikasi.",
-    tags: ["Next.js", "Tailwind CSS", "REST API"],
-  },
-  {
-    id: 2,
-    type: "project",
-    title: "Freelance Web Developer",
-    company: "Self-Employed",
-    period: "2023 – Sekarang",
-    description:
-      "Mengerjakan berbagai project website untuk klien lokal, mulai dari company profile, toko online, hingga sistem manajemen. Menangani seluruh proses dari design hingga deployment.",
-    tags: ["Laravel", "WordPress", "MySQL"],
-  },
-  {
     id: 3,
     type: "education",
     title: "Ketua Divisi IT",
-    company: "OSIS SMK Negeri 1 Bandung",
+    company: "SMK Negeri 11 Bandung",
     period: "2022 – 2023",
     description:
-      "Memimpin tim IT dalam pengembangan website sekolah dan sistem informasi internal. Mengelola infrastruktur digital dan memberikan pelatihan teknologi kepada anggota OSIS.",
+      "Memimpin tim IT dalam pengembangan website sekolah dan sistem informasi internal.",
     tags: ["Leadership", "Web Dev", "IT Management"],
   },
   {
     id: 4,
     type: "education",
     title: "Siswa SMK Jurusan RPL",
-    company: "SMK Negeri 1 Bandung",
-    period: "2021 – 2024",
+    company: "SMK Negeri 11 Bandung",
+    period: "2025 – 2027",
     description:
       "Mempelajari rekayasa perangkat lunak, pemrograman web, database, dan jaringan komputer. Aktif dalam berbagai kompetisi LKS (Lomba Kompetensi Siswa) bidang web technology.",
     tags: ["RPL", "Web Technology", "LKS"],

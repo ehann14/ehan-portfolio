@@ -84,7 +84,7 @@ export function Navbar() {
                   className="text-white font-bold text-base"
                   style={{ fontFamily: "var(--font-display)" }}
                 >
-                  E
+                  F
                 </span>
               </div>
               <span
@@ -95,7 +95,7 @@ export function Navbar() {
                   letterSpacing: "0.05em",
                 }}
               >
-                Ferhan
+                Muhamad Ferhan
               </span>
             </button>
 

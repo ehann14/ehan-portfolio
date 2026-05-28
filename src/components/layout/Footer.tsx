@@ -54,7 +54,7 @@ export function Footer() {
                   letterSpacing: "0.05em",
                 }}
               >
-                Ehan
+                Muhamad Ferhan
               </span>
             </button>
             <p className="text-xs" style={{ color: "var(--text-muted)" }}>
@@ -121,7 +121,7 @@ export function Footer() {
             className="text-xs"
             style={{ color: "var(--text-muted)", fontFamily: "var(--font-mono)" }}
           >
-            © {new Date().getFullYear()} Ehan Portfolio. All rights reserved.
+            © {new Date().getFullYear()} Muhamad Ferhan Portfolio. All rights reserved.
           </p>
           <p
             className="text-xs"

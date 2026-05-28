@@ -4,11 +4,11 @@ import { Providers } from "@/components/Providers";
 import AdminSecretButton from "@/components/ui/AdminSecretButton";
 
 export const metadata: Metadata = {
-  title: "Ehann",
+  title: "Muhamad Ferhan",
   description:
-    "Portfolio Ehan — Full Stack Web Developer specializing in Next.js, Laravel, and modern UI. Building elegant, performant, and user-friendly web experiences.",
+    "Portfolio Muhamad Ferhan — Full Stack Web Developer specializing in Next.js, Laravel, and modern UI. Building elegant, performant, and user-friendly web experiences.",
   keywords: [
-    "Ehan",
+    "Muhamad Ferhan",
     "Web Developer",
     "Portfolio",
     "Next.js",
@@ -23,11 +23,11 @@ export const metadata: Metadata = {
     type: "website",
     title: "Muhammad Ferhan Pratama Sodikin - Portfolio",
     description: "Full Stack Web Developer & UI Designer",
-    siteName: "Ehan Portfolio",
+    siteName: "Muhamad Ferhan Portfolio",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Ehan Portfolio",
+    title: "Muhamad Ferhan Portfolio",
     description: "Full Stack Web Developer & UI Designer",
   },
   robots: {

@@ -1,4 +1,4 @@
-# Ehan Portfolio
+# Muhamad Ferhan Portfolio
 
 Portfolio website modern dan profesional dibangun dengan Next.js, Tailwind CSS, dan Framer Motion.
 

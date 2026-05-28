@@ -65,7 +65,7 @@ export function AboutSection() {
             className="text-base leading-relaxed mb-6"
             style={{ color: "var(--text-secondary)" }}
           >
-            Saya adalah <strong style={{ color: "var(--text-primary)" }}>Ehan</strong>, seorang web
+            Saya adalah <strong style={{ color: "var(--text-primary)" }}>Muhamad Ferhan</strong>, seorang web
             developer yang berbasis di Bandung, Indonesia. Saya memiliki passion yang besar dalam
             membangun produk digital yang tidak hanya fungsional, tetapi juga memiliki tampilan yang
             indah dan pengalaman pengguna yang luar biasa.
