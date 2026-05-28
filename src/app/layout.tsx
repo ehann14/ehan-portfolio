@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Providers } from "@/components/Providers";
+import AdminSecretButton from "@/components/ui/AdminSecretButton";
 
 export const metadata: Metadata = {
   title: "Ehann",
@@ -47,7 +48,10 @@ export default function RootLayout({
   return (
     <html lang="id" suppressHydrationWarning>
       <body>
-        <Providers>{children}</Providers>
+        <Providers>
+          {children}
+          <AdminSecretButton />
+        </Providers>
       </body>
     </html>
   );

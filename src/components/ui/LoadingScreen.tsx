@@ -33,7 +33,7 @@ export function LoadingScreen() {
                   className="text-white font-display font-bold text-2xl"
                   style={{ fontFamily: "var(--font-display)" }}
                 >
-                  E
+                  F
                 </span>
               </div>
               {/* Orbiting dot */}
@@ -56,7 +56,7 @@ export function LoadingScreen() {
                 className="text-xl font-display font-bold tracking-widest"
                 style={{ color: "var(--text-primary)", fontFamily: "var(--font-display)" }}
               >
-                EHAN
+                MUHAMAD FERHAN
               </p>
               <p
                 className="text-xs tracking-[0.3em] mt-1"

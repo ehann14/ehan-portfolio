@@ -223,53 +223,13 @@ export function HeroSection() {
 
               {/* Avatar image */}
               <div className="absolute inset-[6px] rounded-full overflow-hidden bg-gradient-to-br from-blue-900/50 to-cyan-900/30 flex items-center justify-center">
-                {/* SVG Avatar placeholder */}
-                <svg
-                  viewBox="0 0 200 200"
-                  className="w-full h-full"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <defs>
-                    <linearGradient id="avatarBg" x1="0%" y1="0%" x2="100%" y2="100%">
-                      <stop offset="0%" stopColor="#1e3a5f" />
-                      <stop offset="100%" stopColor="#0f2033" />
-                    </linearGradient>
-                    <linearGradient id="skinGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                      <stop offset="0%" stopColor="#FBBF88" />
-                      <stop offset="100%" stopColor="#F59E4A" />
-                    </linearGradient>
-                    <linearGradient id="shirtGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                      <stop offset="0%" stopColor="#3B82F6" />
-                      <stop offset="100%" stopColor="#1D4ED8" />
-                    </linearGradient>
-                  </defs>
-                  <circle cx="100" cy="100" r="100" fill="url(#avatarBg)" />
-                  {/* Body / shirt */}
-                  <ellipse cx="100" cy="170" rx="55" ry="42" fill="url(#shirtGrad)" />
-                  {/* Neck */}
-                  <rect x="90" y="120" width="20" height="22" rx="5" fill="url(#skinGrad)" />
-                  {/* Head */}
-                  <ellipse cx="100" cy="95" rx="38" ry="43" fill="url(#skinGrad)" />
-                  {/* Hair */}
-                  <ellipse cx="100" cy="60" rx="38" ry="20" fill="#1a1a2e" />
-                  <rect x="62" y="55" width="76" height="20" rx="0" fill="#1a1a2e" />
-                  {/* Eyes */}
-                  <ellipse cx="85" cy="92" rx="6" ry="7" fill="white" />
-                  <ellipse cx="115" cy="92" rx="6" ry="7" fill="white" />
-                  <circle cx="86" cy="93" r="3.5" fill="#2d1b69" />
-                  <circle cx="116" cy="93" r="3.5" fill="#2d1b69" />
-                  <circle cx="87" cy="91" r="1.2" fill="white" />
-                  <circle cx="117" cy="91" r="1.2" fill="white" />
-                  {/* Eyebrows */}
-                  <path d="M78 82 Q85 78 92 82" stroke="#3d2b1f" strokeWidth="2.5" fill="none" strokeLinecap="round" />
-                  <path d="M108 82 Q115 78 122 82" stroke="#3d2b1f" strokeWidth="2.5" fill="none" strokeLinecap="round" />
-                  {/* Nose */}
-                  <path d="M100 98 Q96 106 98 110 Q100 112 102 110 Q104 106 100 98" fill="#E5955A" />
-                  {/* Smile */}
-                  <path d="M88 118 Q100 128 112 118" stroke="#c47a3a" strokeWidth="2.5" fill="none" strokeLinecap="round" />
-                  {/* Code symbol on shirt */}
-                  <text x="100" y="178" textAnchor="middle" fill="rgba(255,255,255,0.6)" fontSize="14" fontFamily="monospace" fontWeight="bold">&lt;/&gt;</text>
-                </svg>
+                <Image
+                  src={`/${personalInfo.avatar}`}
+                  alt={personalInfo.name}
+                  fill
+                  className="object-cover"
+                  priority
+                />
               </div>
 
               {/* Floating badges */}

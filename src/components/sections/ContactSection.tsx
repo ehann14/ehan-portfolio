@@ -51,12 +51,26 @@ export function ContactSection() {
 
   const handleSubmit = async () => {
     if (!form.name || !form.email || !form.message) return;
-    setSending(true);
-    await new Promise((r) => setTimeout(r, 1500));
-    setSending(false);
-    setSent(true);
-    setForm({ name: "", email: "", subject: "", message: "" });
-    setTimeout(() => setSent(false), 4000);
+    try {
+      setSending(true);
+      const res = await fetch('/api/messages', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(form),
+      });
+      const data = await res.json();
+      setSending(false);
+      if (res.ok) {
+        setSent(true);
+        setForm({ name: "", email: "", subject: "", message: "" });
+        setTimeout(() => setSent(false), 4000);
+      } else {
+        console.error(data);
+      }
+    } catch (err) {
+      console.error(err);
+      setSending(false);
+    }
   };
 
   return (

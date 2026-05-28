@@ -171,14 +171,13 @@ export function AboutSection() {
               className="text-sm italic leading-relaxed"
               style={{ color: "var(--text-secondary)" }}
             >
-              &ldquo;Code is like art — when it&apos;s elegant, clean, and beautifully crafted, it
-              becomes a masterpiece that stands the test of time.&rdquo;
+              &ldquo;Code is like art — when it&apos;s elegant, clean, and beautifully crafted, it becomes a masterpiece that stands the test of time.&rdquo;
             </p>
             <p
               className="text-xs mt-2 font-semibold"
               style={{ color: "#60A5FA", fontFamily: "var(--font-mono)" }}
             >
-              — Ehan
+              — Muhamad Ferhan
             </p>
           </motion.div>
         </div>

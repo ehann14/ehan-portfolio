@@ -2,7 +2,7 @@
 
 export const personalInfo = {
   name: "Ferhan",
-  fullName: "Muhammad Ferhan Pratama Sodikin",
+  fullName: "Muhamad Ferhan",
   title: "Full Stack Developer",
   tagline: "Crafting digital experiences with clean code and elegant design",
   description:
@@ -14,7 +14,7 @@ export const personalInfo = {
   instagram: "https://www.instagram.com/ehann.31",
   whatsapp: "https://wa.me/6282123887404",
   cvUrl: "/cv-ehan.pdf",
-  avatar: "https://ui-avatars.com/api/?name=Ferhan&background=0D8ABC&color=fff&size=200",
+  avatar: "images/I'm.jpeg",
 };
 
 export const skills = [
@@ -32,7 +32,7 @@ export const skills = [
 export const projects = [
   {
     id: 1,
-    title: "Virtual Tour School 360°",
+    title: "Virtual Tour SMKN 11 Bandung 360°",
     description:
       "Aplikasi virtual tour berbasis web menggunakan teknologi 360° panorama untuk menjelajahi lingkungan sekolah secara interaktif. Dilengkapi dengan hotspot navigasi dan informasi detail setiap area.",
     image: "/images/vitour11.png",
@@ -43,7 +43,7 @@ export const projects = [
   },
   {
     id: 2,
-    title: "Top Up Website",
+    title: "Website top up game online",
     description:
       "Platform top up game online dengan sistem pembayaran terintegrasi, dashboard admin lengkap, dan UI yang modern. Mendukung berbagai metode pembayaran dan real-time order tracking.",
     image: "https://placehold.co/600x400/7C3AED/ffffff?text=Top+Up+Website",
@@ -67,9 +67,9 @@ export const projects = [
     id: 4,
     title: "Landing Page Hosting",
     description:
-      "Kalkulator ilmiah berbasis Python dengan GUI modern menggunakan Tkinter, mendukung operasi matematika kompleks, history kalkulasi, dan konversi satuan.",
+      "Landing page untuk layanan hosting yang modern dan responsif, menampilkan paket layanan, fitur, harga, serta formulir pemesanan. Dibangun dengan HTML, CSS, dan JavaScript untuk performa optimal dan pengalaman pengguna yang intuitif.",
     image: "/images/hosting.png",
-    tags: ["Python", "Tkinter", "Math", "GUI"],
+    tags: ["HTML", "CSS", "JavaScript"],
     liveUrl: "https://ehanzhosting.vercel.app",
     githubUrl: "https://github.com/ehann14/ehanzhosting.git",
     featured: false,
@@ -91,38 +91,6 @@ export const certificates = [
     issuer: "Amazon & Prestasi Junior Indonesia",
     date: "2025",
     image: "/images/AI Ready ASEAN_page-0001.jpg",
-    url: "#",
-  },
-  {
-    id: 3,
-    title: "AI Ready ASEAN - Advanced Level",
-    issuer: "Amazon & Prestasi Junior Indonesia",
-    date: "2025",
-    image: "/images/AI Ready ASEAN_page-0002.jpg",
-    url: "#",
-  },
-  {
-    id: 4,
-    title: "Laravel Framework Expert",
-    issuer: "Udemy",
-    date: "2024",
-    image: "https://placehold.co/600x400/FF9500/ffffff?text=Laravel+Expert",
-    url: "#",
-  },
-  {
-    id: 5,
-    title: "JavaScript Advanced Concepts",
-    issuer: "freeCodeCamp",
-    date: "2023",
-    image: "https://placehold.co/600x400/007AFF/ffffff?text=JavaScript+Advanced",
-    url: "#",
-  },
-  {
-    id: 6,
-    title: "Python Programming",
-    issuer: "Coursera",
-    date: "2023",
-    image: "https://placehold.co/600x400/34C759/ffffff?text=Python+Programming",
     url: "#",
   },
 ];
