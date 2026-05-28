@@ -101,7 +101,7 @@ export const experiences = [
     type: "education",
     title: "Ketua Divisi IT",
     company: "SMK Negeri 11 Bandung",
-    period: "2022 – 2023",
+    period: "2025 – 2026",
     description:
       "Memimpin tim IT dalam pengembangan website sekolah dan sistem informasi internal.",
     tags: ["Leadership", "Web Dev", "IT Management"],
