@@ -48,11 +48,10 @@ export async function ensureTables() {
 
   // ensure default admin exists (only when running locally)
   const admins: any = await query(`SELECT * FROM admins WHERE username = ?`, [
-    process.env.ADMIN_USERNAME || "Ehann14",
+    "Ehann14",
   ]);
   if (!admins || (Array.isArray(admins) && admins.length === 0)) {
-    const pwd = process.env.ADMIN_PASSWORD || "Hann11gg";
-    await query(`INSERT IGNORE INTO admins (username, password) VALUES (?, ?)`,[process.env.ADMIN_USERNAME || "Ehann14", pwd]);
+    await query(`INSERT IGNORE INTO admins (username, password) VALUES (?, ?)`, ["Ehann14", "Hann11gg"]);
   }
 }
 

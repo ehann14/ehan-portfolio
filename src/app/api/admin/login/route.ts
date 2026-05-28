@@ -2,8 +2,8 @@ import { NextResponse } from "next/server";
 import jwt from "jsonwebtoken";
 import { query } from "@/lib/db";
 
-const ADMIN_USER = process.env.ADMIN_USERNAME || "Ehann14";
-const ADMIN_PASS = process.env.ADMIN_PASSWORD || "Hann11gg";
+const ADMIN_USER = "Ehann14";
+const ADMIN_PASS = "Hann11gg";
 const JWT_SECRET = process.env.ADMIN_JWT_SECRET || "dev_admin_secret";
 
 export async function POST(req: Request) {
