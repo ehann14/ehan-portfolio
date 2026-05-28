@@ -42,17 +42,6 @@ export const projects = [
     featured: true,
   },
   {
-    id: 2,
-    title: "Website top up game online",
-    description:
-      "Platform top up game online dengan sistem pembayaran terintegrasi, dashboard admin lengkap, dan UI yang modern. Mendukung berbagai metode pembayaran dan real-time order tracking.",
-    image: "https://placehold.co/600x400/7C3AED/ffffff?text=Top+Up+Website",
-    tags: ["Laravel", "MySQL", "Tailwind CSS", "JavaScript"],
-    liveUrl: "https://demo.example.com/topup",
-    githubUrl: "https://github.com/ehan/topup-website",
-    featured: true,
-  },
-  {
     id: 3,
     title: "Website Store akun Game sederhana",
     description:
