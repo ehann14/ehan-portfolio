@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   creator: "Muhamad Ferhan",
   openGraph: {
     type: "website",
-    title: "Muhammad Ferhan Pratama Sodikin - Portfolio",
+    title: "Muhamad Ferhan - Portfolio",
     description: "Full Stack Web Developer & UI Designer",
     siteName: "Muhamad Ferhan Portfolio",
   },
