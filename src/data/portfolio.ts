@@ -18,14 +18,14 @@ export const personalInfo = {
 };
 
 export const skills = [
-  { name: "HTML", level: 95, category: "Frontend" },
-  { name: "CSS", level: 90, category: "Frontend" },
-  { name: "JavaScript", level: 88, category: "Frontend" },
-  { name: "Tailwind CSS", level: 92, category: "Frontend" },
-  { name: "Next.js", level: 82, category: "Frontend" },
-  { name: "PHP", level: 80, category: "Backend" },
-  { name: "Laravel", level: 78, category: "Backend" },
-  { name: "Python", level: 75, category: "Backend" },
+  { name: "HTML", level:87, category: "Frontend" },
+  { name: "CSS", level: 82, category: "Frontend" },
+  { name: "JavaScript", level: 82, category: "Frontend" },
+  { name: "Tailwind CSS", level: 80, category: "Frontend" },
+  { name: "Next.js", level: 75, category: "Frontend" },
+  { name: "PHP", level: 85, category: "Backend" },
+  { name: "Laravel", level: 85, category: "Backend" },
+  { name: "Python", level: 87, category: "Backend" },
   { name: "MySQL", level: 85, category: "Database" },
 ];
 
@@ -42,7 +42,7 @@ export const projects = [
     featured: true,
   },
   {
-    id: 3,
+    id: 2,
     title: "Website Store akun Game sederhana",
     description:
       "Aplikasi manajemen data full-featured dengan Laravel, dilengkapi autentikasi, role management, export Excel/PDF, dan dashboard analitik yang komprehensif.",
@@ -53,7 +53,7 @@ export const projects = [
     featured: false,
   },
   {
-    id: 4,
+    id: 3,
     title: "Landing Page Hosting",
     description:
       "Landing page untuk layanan hosting yang modern dan responsif, menampilkan paket layanan, fitur, harga, serta formulir pemesanan. Dibangun dengan HTML, CSS, dan JavaScript untuk performa optimal dan pengalaman pengguna yang intuitif.",
@@ -61,6 +61,17 @@ export const projects = [
     tags: ["HTML", "CSS", "JavaScript"],
     liveUrl: "https://ehanzhosting.vercel.app",
     githubUrl: "https://github.com/ehann14/ehanzhosting.git",
+    featured: false,
+  },
+    {
+    id: 4,
+    title: "Company Profile",
+    description:
+      "Website company profile PT Ehan ini bertujuan membangun kredibilitas digital perusahaan ekspor-impor dan memudahkan koneksi dengan mitra bisnis global. Desainnya mengusung nuansa premium minimalis dengan kombinasi warna krem-emas, tipografi elegan, serta tata letak responsif yang halus dan profesional di semua perangkat.",
+    image: "/images/PTEhan.png",
+    tags: ["HTML", "CSS", "JavaScript"],
+    liveUrl: "https://pt-ehan.vercel.app/",
+    githubUrl: "https://github.com/ehann14/PT-Ehan",
     featured: false,
   },
 ];
@@ -86,23 +97,30 @@ export const certificates = [
 
 export const experiences = [
   {
-    id: 3,
+    id: 2,
     type: "education",
-    title: "Ketua Divisi IT",
+    title: "Ketua Kelompok Projek Vitour11",
     company: "SMK Negeri 11 Bandung",
     period: "2025 – 2026",
-    description:
-      "Memimpin tim IT dalam pengembangan website sekolah dan sistem informasi internal.",
+    description: "Memimpin tim dalam pengembangan website sekolah dan sistem informasi internal.",
     tags: ["Leadership", "Web Dev", "IT Management"],
+  },
+  {
+    id: 3,
+    type: "education",
+    title: "Membuat Projek Website Berita",
+    company: "SMK Negeri 11 Bandung",
+    period: "2025 – 2026",
+    description: "Merancang dan mengembangkan website berita responsif dengan fitur kategori, pencarian, dan manajemen konten sederhana. Proyek ini mengimplementasikan Laravel serta Git/GitHub untuk version control dan deployment, sebagai bagian dari praktikum pengembangan web sekolah.",
+    tags: ["Frontend Dev", "Responsive Design", "HTML/CSS/JS", "Git & GitHub", "UI/UX"]
   },
   {
     id: 4,
     type: "education",
     title: "Siswa SMK Jurusan RPL",
     company: "SMK Negeri 11 Bandung",
-    period: "2025 – 2027",
-    description:
-      "Mempelajari rekayasa perangkat lunak, pemrograman web, database, dan jaringan komputer. Aktif dalam berbagai kompetisi LKS (Lomba Kompetensi Siswa) bidang web technology.",
-    tags: ["RPL", "Web Technology", "LKS"],
+    period: "2024 – 2027",
+    description: "Menempuh pendidikan di jurusan Rekayasa Perangkat Lunak dengan fokus pada penguatan logika melalui dasar pemrograman dan algoritma. Materi juga mencakup pengenalan basis data, jaringan komputer, serta praktik terbaik dalam pengembangan perangkat lunak sebagai fondasi menuju kompetensi teknis yang lebih mendalam.",
+    tags: ["Dasar Pemrograman", "Algoritma & Logika", "Database Dasar", "Jaringan Komputer", "RPL Fundamentals"]
   },
 ];

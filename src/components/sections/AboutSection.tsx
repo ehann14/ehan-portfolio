@@ -42,7 +42,7 @@ const highlights = [
 const info = [
   { icon: HiLocationMarker, label: "Location", value: personalInfo.location },
   { icon: HiMail, label: "Email", value: personalInfo.email },
-  { icon: HiAcademicCap, label: "Education", value: "SMK Jurusan RPL" },
+  { icon: HiAcademicCap, label: "Education", value: "SMK Jurusan Rekayasa Perangkat Lunak (RPL)" },
 ];
 
 export function AboutSection() {
@@ -79,7 +79,7 @@ export function AboutSection() {
             className="text-base leading-relaxed mb-8"
             style={{ color: "var(--text-secondary)" }}
           >
-            Dengan pengalaman dalam <strong style={{ color: "#60A5FA" }}>Next.js</strong>,{" "}
+            Dengan pengalaman dalam <strong style={{ color: "#60A5FA" }}>typescript</strong>,{" "}
             <strong style={{ color: "#60A5FA" }}>Laravel</strong>, dan berbagai teknologi modern
             lainnya, saya selalu berusaha memberikan solusi terbaik untuk setiap tantangan yang ada.
           </motion.p>
@@ -171,7 +171,7 @@ export function AboutSection() {
               className="text-sm italic leading-relaxed"
               style={{ color: "var(--text-secondary)" }}
             >
-              &ldquo;Code is like art — when it&apos;s elegant, clean, and beautifully crafted, it becomes a masterpiece that stands the test of time.&rdquo;
+              If code is logic that can be tuned, your feelings are a mystery that doesn’t always need a solution.
             </p>
             <p
               className="text-xs mt-2 font-semibold"

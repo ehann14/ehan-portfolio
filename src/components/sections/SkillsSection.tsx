@@ -162,7 +162,7 @@ export function SkillsSection() {
           Also familiar with
         </p>
         <div className="flex flex-wrap justify-center gap-3">
-          {["Git", "GitHub", "VS Code", "Figma", "Linux", "REST API", "Bootstrap", "jQuery", "Livewire"].map(
+          {["Git", "GitHub", "VS Code", "Figma", "REST API", "Bootstrap", "jQuery", "Livewire"].map(
             (tech) => (
               <span
                 key={tech}
