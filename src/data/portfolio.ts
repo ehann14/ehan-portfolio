@@ -37,7 +37,7 @@ export const projects = [
       "Aplikasi virtual tour berbasis web menggunakan teknologi 360° panorama untuk menjelajahi lingkungan sekolah secara interaktif. Dilengkapi dengan hotspot navigasi dan informasi detail setiap area.",
     image: "/images/vitour11.png",
     tags: ["JavaScript", "Tailwind CSS", "HTML/CSS", "PHP", "Laravel"],
-    liveUrl: "http://127.0.0.1:8000",
+    liveUrl: "https://vitour11.ehangg.my.id/",
     githubUrl: "https://github.com/ehann14/vitour11",
     featured: true,
   },
@@ -91,6 +91,14 @@ export const certificates = [
     issuer: "Amazon & Prestasi Junior Indonesia",
     date: "2025",
     image: "/images/AI Ready ASEAN_page-0001.jpg",
+    url: "#",
+  },
+  {
+    id: 3,
+    title: "Sertifikat Web Hosting",
+    issuer: "Nama Penyelenggara",
+    date: "2025",
+    image: "/images/namahosting.jpg",
     url: "#",
   },
 ];
