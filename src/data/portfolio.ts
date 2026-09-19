@@ -96,9 +96,9 @@ export const certificates = [
   {
     id: 3,
     title: "Sertifikat Web Hosting",
-    issuer: "Nama Penyelenggara",
+    issuer: "NamaHosting",
     date: "2025",
-    image: "/images/namahosting.jpg",
+    image: "/images/namahosting.png",
     url: "#",
   },
 ];

@@ -7,25 +7,60 @@ export function LoadingScreen() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const timer = setTimeout(() => setLoading(false), 1800);
-    return () => clearTimeout(timer);
+    // Total durasi loading: 2.4 detik (cukup buat nikmatin animasi, nggak kelamaan)
+    const doneTimer = setTimeout(() => setLoading(false), 2400);
+    return () => clearTimeout(doneTimer);
   }, []);
 
   return (
     <AnimatePresence>
       {loading && (
         <motion.div
-          className="fixed inset-0 z-[9999] flex items-center justify-center"
+          className="fixed inset-0 z-[9999] flex items-center justify-center overflow-hidden"
           style={{ backgroundColor: "var(--bg)" }}
           initial={{ opacity: 1 }}
-          exit={{ opacity: 0, transition: { duration: 0.5, ease: "easeInOut" } }}
+          exit={{ opacity: 0, transition: { duration: 0.6, ease: "easeInOut" } }}
         >
-          <div className="flex flex-col items-center gap-6">
+          {/* Partikel mengambang di background */}
+          <div className="absolute inset-0 pointer-events-none">
+            {Array.from({ length: 8 }).map((_, i) => (
+              <motion.div
+                key={i}
+                className="absolute rounded-full"
+                style={{
+                  width: 6 + (i % 3) * 4,
+                  height: 6 + (i % 3) * 4,
+                  background: i % 2 === 0 ? "#3B82F6" : "#06B6D4",
+                  top: `${12 + i * 10}%`,
+                  left: `${8 + ((i * 17) % 85)}%`,
+                }}
+                initial={{ opacity: 0.1 }}
+                animate={{
+                  y: [0, -20, 0],
+                  opacity: [0.1, 0.35, 0.1],
+                }}
+                transition={{
+                  duration: 3 + i * 0.35,
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                  delay: i * 0.2,
+                }}
+              />
+            ))}
+          </div>
+
+          {/* Konten utama: logo + nama + loading bar */}
+          <motion.div
+            className="flex flex-col items-center gap-6"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.5 }}
+          >
             {/* Logo mark */}
             <motion.div
               initial={{ scale: 0, rotate: -180 }}
               animate={{ scale: 1, rotate: 0 }}
-              transition={{ duration: 0.6, ease: "backOut" }}
+              transition={{ duration: 0.7, ease: "backOut" }}
               className="relative"
             >
               <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-blue-500 to-cyan-400 flex items-center justify-center shadow-lg shadow-blue-500/30">
@@ -49,7 +84,7 @@ export function LoadingScreen() {
             <motion.div
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.4, duration: 0.4 }}
+              transition={{ delay: 0.35, duration: 0.5 }}
               className="text-center"
             >
               <p
@@ -78,10 +113,10 @@ export function LoadingScreen() {
                 className="h-full bg-gradient-to-r from-blue-500 to-cyan-400 rounded-full"
                 initial={{ width: "0%" }}
                 animate={{ width: "100%" }}
-                transition={{ delay: 0.6, duration: 1, ease: "easeInOut" }}
+                transition={{ delay: 0.6, duration: 1.2, ease: "easeInOut" }}
               />
             </motion.div>
-          </div>
+          </motion.div>
         </motion.div>
       )}
     </AnimatePresence>

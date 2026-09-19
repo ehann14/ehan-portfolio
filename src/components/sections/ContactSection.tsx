@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { HiMail, HiPhone, HiLocationMarker, HiPaperAirplane, HiCheck } from "react-icons/hi";
+import { HiMail, HiPhone, HiLocationMarker, HiCheck } from "react-icons/hi";
 import { FaGithub, FaInstagram, FaWhatsapp } from "react-icons/fa";
 import { SectionWrapper, SectionHeading } from "@/components/ui/SectionWrapper";
 import { personalInfo } from "@/data/portfolio";
@@ -44,29 +44,34 @@ const contactInfo = [
   { icon: HiLocationMarker, label: "Location", value: personalInfo.location },
 ];
 
+const WHATSAPP_NUMBER = "6285119902576"; // 085119902576
+
 export function ContactSection() {
-  const [form, setForm] = useState({ name: "", email: "", subject: "", message: "" });
+  const [form, setForm] = useState({ name: "", subject: "", message: "" });
   const [sending, setSending] = useState(false);
   const [sent, setSent] = useState(false);
 
   const handleSubmit = async () => {
-    if (!form.name || !form.email || !form.message) return;
+    if (!form.name || !form.message) return;
     try {
       setSending(true);
-      const res = await fetch('/api/messages', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(form),
-      });
-      const data = await res.json();
-      setSending(false);
-      if (res.ok) {
+
+      // Susun pesan dengan format yang sama seperti form (Nama, Subject, Pesan)
+      const waText =
+        `Halo, saya ingin menghubungi Anda melalui portfolio.\n\n` +
+        `Nama: ${form.name}\n` +
+        `Subject: ${form.subject || "-"}\n` +
+        `Pesan: ${form.message}`;
+
+      const waUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(waText)}`;
+
+      setTimeout(() => {
+        setSending(false);
         setSent(true);
-        setForm({ name: "", email: "", subject: "", message: "" });
+        window.open(waUrl, "_blank", "noopener,noreferrer");
+        setForm({ name: "", subject: "", message: "" });
         setTimeout(() => setSent(false), 4000);
-      } else {
-        console.error(data);
-      }
+      }, 600);
     } catch (err) {
       console.error(err);
       setSending(false);
@@ -205,49 +210,26 @@ export function ContactSection() {
           </h3>
 
           <div className="space-y-4">
-            <div className="grid grid-cols-2 gap-4">
-              <div>
-                <label
-                  className="block text-xs font-medium mb-2"
-                  style={{ color: "var(--text-muted)", fontFamily: "var(--font-mono)" }}
-                >
-                  Nama
-                </label>
-                <input
-                  type="text"
-                  value={form.name}
-                  onChange={(e) => setForm({ ...form, name: e.target.value })}
-                  placeholder="Nama kamu"
-                  className="w-full px-4 py-3 rounded-xl text-sm outline-none transition-all focus:ring-2 focus:ring-blue-500/30"
-                  style={{
-                    backgroundColor: "var(--surface)",
-                    color: "var(--text-primary)",
-                    border: "1px solid var(--border)",
-                    fontFamily: "var(--font-body)",
-                  }}
-                />
-              </div>
-              <div>
-                <label
-                  className="block text-xs font-medium mb-2"
-                  style={{ color: "var(--text-muted)", fontFamily: "var(--font-mono)" }}
-                >
-                  Email
-                </label>
-                <input
-                  type="email"
-                  value={form.email}
-                  onChange={(e) => setForm({ ...form, email: e.target.value })}
-                  placeholder="email@kamu.com"
-                  className="w-full px-4 py-3 rounded-xl text-sm outline-none transition-all focus:ring-2 focus:ring-blue-500/30"
-                  style={{
-                    backgroundColor: "var(--surface)",
-                    color: "var(--text-primary)",
-                    border: "1px solid var(--border)",
-                    fontFamily: "var(--font-body)",
-                  }}
-                />
-              </div>
+            <div>
+              <label
+                className="block text-xs font-medium mb-2"
+                style={{ color: "var(--text-muted)", fontFamily: "var(--font-mono)" }}
+              >
+                Nama
+              </label>
+              <input
+                type="text"
+                value={form.name}
+                onChange={(e) => setForm({ ...form, name: e.target.value })}
+                placeholder="Nama kamu"
+                className="w-full px-4 py-3 rounded-xl text-sm outline-none transition-all focus:ring-2 focus:ring-blue-500/30"
+                style={{
+                  backgroundColor: "var(--surface)",
+                  color: "var(--text-primary)",
+                  border: "1px solid var(--border)",
+                  fontFamily: "var(--font-body)",
+                }}
+              />
             </div>
 
             <div>
@@ -310,17 +292,17 @@ export function ContactSection() {
               {sending ? (
                 <>
                   <div className="w-4 h-4 border-2 border-white/30 border-t-white rounded-full spinner" />
-                  Mengirim...
+                  Mengalihkan ke WhatsApp...
                 </>
               ) : sent ? (
                 <>
                   <HiCheck className="w-4 h-4" />
-                  Pesan Terkirim!
+                  Terkirim ke WhatsApp!
                 </>
               ) : (
                 <>
-                  <HiPaperAirplane className="w-4 h-4 -rotate-45" />
-                  Kirim Pesan
+                  <FaWhatsapp className="w-4 h-4" />
+                  Kirim via WhatsApp
                 </>
               )}
             </motion.button>

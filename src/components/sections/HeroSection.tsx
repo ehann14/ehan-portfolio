@@ -180,7 +180,7 @@ export function HeroSection() {
             >
               {[
                 { label: "Projects", value: "10+" },
-                { label: "Certificates", value: "2" },
+                { label: "Certificates", value: "3" },
                 { label: "Technologies", value: "9+" },
               ].map((stat) => (
                 <div key={stat.label} className="text-center lg:text-left">
